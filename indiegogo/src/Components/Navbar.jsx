@@ -10,8 +10,8 @@ const NavbarStyle = styled.div`
 
   & > * > * {
     font-weight: 600;
-    margin: 0px 3px;
-    font-size: 13px;
+    margin: 0px 5px;
+    font-size: 17px;
     text-decoration: none;
     color: black;
   }
