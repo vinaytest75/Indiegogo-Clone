@@ -7,6 +7,7 @@ import {
   InstagramOutlined,
   LinkedinFilled,
 } from "@ant-design/icons";
+import { CurrencyModal } from "./FooterComponents/CurrencyModal";
 
 const FooterStyle = styled.div`
   background: #f5f5f5;
@@ -134,7 +135,8 @@ const Footer = () => {
       {/* ---------Footer Bottom Section ---------- */}
       <BottomIcon>
         <div>
-          <button>Indian Ruppee(INR)</button>
+          <button>Indian Rupee(INR)</button>
+          {/* <CurrencyModal /> */}
         </div>
         <div>
           <FacebookOutlined />
