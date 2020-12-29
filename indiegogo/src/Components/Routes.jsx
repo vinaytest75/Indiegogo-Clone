@@ -40,7 +40,7 @@ const Routes = () => {
         {/* <Route path="/login" component={(props) => <Login {...props} />} />
         <Route path="/" component={(props) => <Home {...props} />} /> */}
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

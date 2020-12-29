@@ -17,7 +17,7 @@ const CampaignCard = styled.div`
   margin: 10px;
   font-weight: 300;
   width: 400px;
-  height: 200px;
+  height: 225px;
   align-text: center;
   padding: 40px 32px;
 
