@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styles from './LoginPage.module.css'
 import axios from "axios"
+import AppContext from "./AppContextProvider"
+
 
 
 class LoginPopUpModal extends Component {
@@ -21,22 +23,12 @@ class LoginPopUpModal extends Component {
     }
     handleAuthentication(){
         const {email,password} = this.state;
-        axios({
-            method:"post",
-            url:"https://masai-api-mocker.herokuapp.com/auth/login",
-            data:{
-                email,
-                password
-            }
-        })
-        .then((res) =>{
-            this.setState({
-                isAuth:true
-            })
-        })
-        .catch((err)=>{
-            console.log(err)
-        })
+        console.log(this.context)
+        const {handleAuthentication} = this.context
+
+        handleAuthentication({email,password})
+     
+     
 
     }
     render() {
@@ -81,5 +73,5 @@ class LoginPopUpModal extends Component {
         );
     }
 }
-
+LoginPopUpModal.contextType = AppContext
 export default LoginPopUpModal;
