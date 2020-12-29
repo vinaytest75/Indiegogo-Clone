@@ -1,2 +1,2 @@
 # Indiegogo-Clone
-Indiegogo Clone - A Crowd Funding Platform for Entreprenuers 
+Indiegogo Clone - A Crowd Funding Platform for Entreprenuers A
