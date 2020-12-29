@@ -1,0 +1,91 @@
+{
+    "popular_projects": [
+        {
+            "avatar": "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/bidkrknv5fmapzjk6mkf",
+            "type": "FUNDING",
+            "name": "Olive Pro: 2-in-1 Hearing Aids & Bluetooth Earbuds",
+            "description": "Enhanced Hearing for Sounds, Music and Conversations. Affordable Hearing for All.",
+            "category" :"AUDIO",
+            "price": "$584,644",
+            "currency" : "USD raised",
+            "percentage": "2,923%",
+            "no_of_days_left": "19 days left"
+        },
+        {
+            "avatar": "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/rkrdjuwbdswuny563vn3",
+            "type": "FUNDING",
+            "name": "inCharge X - The 100W Swiss Army Knife of Cables",
+            "description": "The most crowdfunded cable EVER is back! Tiny, Universal, Ultra Powerful keyring cable.",
+            "category" :"Phones & Accessories",
+            "price": "€330,772",
+            "currency" : "EUR raised",
+            "percentage": "3,308%",
+            "no_of_days_left": "14 days left"
+        },
+        {
+            "avatar": "https://c4.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/ebxsux9m4tibwkfrkcyc",
+            "type": "FUNDING",
+            "name": "TurboHub: World’s Fastest SSD & Multiport Adapter",
+            "description": "4TB SSD  + Thunderbolt 3 + USB 3.1 Gen2 + USB Gen 3.1+ HDMI 2.0  + SD UHS-II + 1000Mbps Ethernet",
+            "category" :"Phones & Accessories",
+            "price": "$1,391,668",
+            "currency" : "HKD raised",
+            "percentage": "1,392%",
+            "no_of_days_left": "32 days left"
+        },
+        {
+            "avatar": "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/e8xlpyytlkpabfgfcpny",
+            "type": "FUNDING",
+            "name": "Edeskhub: The Best Smart Desk for Healthy Working.",
+            "description": "700mm Adjustable Height | Wireless Charging | 100W Power Delivery Hub | Relax While at Work",
+            "category" :"HOME",
+            "price": "$365,573",
+            "currency" : "USD raised",
+            "percentage": "7,311%",
+            "no_of_days_left": "15 days left"
+        },
+        {
+            "avatar": "https://c4.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/zvxwonb0z6956szcvtfe",
+            "type": "FUNDING",
+            "name": "Pepper Cannon: The Pepper Mill for Pepper Lovers",
+            "description": "Pepper your steak in 7 cranks instead of 70.",
+            "category" :"HOME",
+            "price": "$1,261,423",
+            "currency" : "USD raised",
+            "percentage": "11,047%",
+            "no_of_days_left": "Now funding through InDEMAND"
+        }
+    ],
+    "banners":[
+        {
+            "type" : ["button", "GOGOPICKS"],
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608750043/ebnhzzgy0s4bjckiicok.jpg",
+            "name": "Olive Pro: 2-in-1 Hearing Aids & Bluetooth Earbuds",
+            "description": "Enhanced Hearing for Sounds, Music and Conversations. Affordable Hearing for All."
+        },
+        {
+            "type" : ["button", "GOGOPICKS"],
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608748918/i4znoxv6wmueauzeemks.png",
+            "name": "inCharge X - The 100W Swiss Army Knife of Cables",
+            "description": "The most crowdfunded cable EVER is back! Tiny, Universal, Ultra Powerful keyring cable."
+        },
+        {
+            "type" : ["text", "FEATURED"],
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608658306/sq99rrhy9cl65o0z6kva.jpg",
+            "name": "Aura Mate Pro - Best Premium Updated Scanner Yet",
+            "description": "Dual-Camera, Document Camera, Use With Zoom, 16 MegaPixel, Curve-Flatten Tech, Scan A Book In 8 Mins"
+        },
+        {
+            "type" : ["text", "FEATURED"],
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608749866/x64zyvkgbpphl462hiet.jpg",
+            "name": "The Phantom Direct Drive Electric Skateboard",
+            "description": "30 MPH, 30 Mile Range. Next Gen 21700 Lithium Battery and Carbon Fiber Drop Deck You Can Count On."
+        },
+        {
+            "type" : ["text", "FEATURED"],
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608750043/ebnhzzgy0s4bjckiicok.jpg",
+            "name": "Flynova Pro:Boomerang spinner with endless tricks!",
+            "description": "Dynamic lights｜Safe for children｜Drop-resistant｜Tripled battery life"
+        }
+    ]
+}

@@ -1,26 +1,36 @@
 import React from "react"
-
+import  data from "../data.json"
+import Styles from "./ProjectCard.module.css"
 const ProjectCard  = () => {
+    console.log(data);
     return (
-        <div>
-            <div class="card" style={{width: "18rem"}}>
-                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/twssjiianvaytwckmwuu" class="card-img-top" alt="..." />
-                <div  className="card-body">
-                    <h5 className="card-title">Niche Zero: the best conical burr coffie grinder</h5>
-                    <p className="card-text">the only way to become a true home barista and make the best testing coffie. every time.</p>
-
-                </div>
-                {/* categories */}
-                <p style = {{ fontSize: "14px" ,padding :"4px 6px 0px 20px"}}>FOOD AND BEVERAGES</p>
-                <div style = {{padding :"1px 0px 0px 20px", float: "left"}}>
-                    <div style = {{float: "left"}}><h4>$2,182,861<span style = {{padding :"1px 6px 0px 2px", fontSize:"14px"}}>USD raised</span></h4>
-                    {/* percentag */}
+        <div className = {Styles.cardBody}>
+            {data.popular_projects.map( (item,index) =>{
+                return (     
+                    <div key = {index} className={Styles.cardItems} style={{width: "275px"}}>
+                        <div style = {{ minHeight: "300px" }}>
+                            <img src={item.avatar} className="card-img-top" alt={item.name} />
+                            <div  className="card-body">
+                                <h5 style= {{fontSize: "17px"}} className="card-title">{item.name}</h5>
+                                <p style= {{fontSize: "12px"}} className="card-text">{item.description}</p>
+                            </div>
+                        </div>
+                        {/* categories */}
+                        <div className="card-footer text-muted"   style = {{position:"relative", top:"20px"}} >
+                            <p style = {{ fontSize: "13px" ,padding :"4px 6px 0px 20px"}}>{item.category}</p>
+                            <div style = {{padding :"1px 0px 0px 20px", float: "left"}}>
+                                <div style = {{float: "left"}}><h4>{item.price}<span style = {{padding :"1px 6px 0px 2px", fontSize:"13px"}}>{item.currency}</span></h4>
+                                {/* percentag */}
+                                </div>
+                                <div style = {{paddingTop :4, float: "right"}} >{item.percentage}</div>
+                                
+                            </div>
+                            <div style = {{padding :"4px 6px 0px 20px", clear: "both"}} > {item.no_of_days_left} <span style = {{fontSize: "12px"}}>InDEMAND</span></div>
+                        </div>
                     </div>
-                    <div style = {{paddingTop :4, float: "right"}} > 4,040% </div>
-                    
-                </div>
-                <div style = {{padding :"4px 6px 0px 20px", clear: "both"}} >Now funding through <span style = {{fontSize: "12px"}}>InDEMAND</span></div>
-            </div>
+                )
+            })}
+            
         </div>
     )
 }
