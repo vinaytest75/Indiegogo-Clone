@@ -23,12 +23,12 @@ const Routes = () => {
         }}
       />
       <Switch>
-        {/* <Route path="/explore" component={(props) => <Explore {...props} />} />
+        {/* <Route path="/explore" component={(props) => <Explore {...props} />} /> */}
         <Route
           path="/whatwedo"
           component={(props) => <WhatWeDo {...props} />}
         />
-        <Route path="/search" component={(props) => <Search {...props} />} />
+        {/* <Route path="/search" component={(props) => <Search {...props} />} />
         <Route
           path="/entrepreneurs"
           component={(props) => <ForEntrepreneurs {...props} />}
