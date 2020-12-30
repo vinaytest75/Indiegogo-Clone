@@ -33,7 +33,6 @@ const ExploreProjectsBtn = styled.div`
 const CampaignGrid = styled.div`
   margin: 50px 20px;
   padding: 20px 5px;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 65% 32%;
   grid-template-rows: 600px 600px;
@@ -56,28 +55,57 @@ const CampaignGrid = styled.div`
 
     & img {
       transform: rotate(60deg);
-      // height: 500px;
+      height: 500px;
     }
   }
 `;
 
-const FavCampaignComponent = () => {
+const favCardTop = [
+  {
+    id: 1,
+    head: "Misfit Shine",
+    count: "7,957 Backers",
+    content:
+      "With super-smart fitness technology squeezed into a sleek, take-it-anywhere design, the Misfit Shine was a huge hit. Today it’s available in stores everywhere, but Indiegogo backers were in on the action first. ",
+  },
+  {
+    id: 2,
+    head: "Bluesmart",
+    count: "10,984 Backers ",
+    content:
+      "This smash-hit campaign almost singlehandedly invented the smart suitcase as the must-have travel accessory that it is today. With innovative features like location tracking and a built-in scale, Bluesmart went big on Indiegogo before landing in stores around the world. ",
+  },
+];
+
+const favCardBottom = [
+  {
+    id: 3,
+    head: "Evapolar",
+    count: "6,616 Backers ",
+    content:
+      "The Evapolar team’s slick air conditioner is small enough to place exactly where you need it most. It even cleans and humidifies as it cools. The campaign was so successful that the team came back to Indiegogo to launch the next-gen version. ",
+  },
+  {
+    id: 4,
+    head: "Super Troopers 2",
+    count: "54,531 Backers ",
+    content:
+      "With its truly gigantic backer community, Super Troopers 2 became one of the most iconic Indiegogo film projects. The team behind the project offered backers everything from movie tickets to an actual police car from the film! ",
+  },
+];
+
+const FavCampaignComponent = ({ head, count, content }) => {
   return (
-    <div style={{ border: "1px solid black", width: "45%", margin: "5px" }}>
+    <div style={{ width: "45%", margin: "5px" }}>
       <img
         src="https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/bluesmart.png"
         alt="favCampaignImg"
         height="80px"
       />
-      <h3>Head</h3>
-      <p>Backers Count</p>
+      <h3>{head}</h3>
+      <p>{count}</p>
       <br />
-      <div style={{ width: "300px", margin: "auto" }}>
-        With super-smart fitness technology squeezed into a sleek,
-        take-it-anywhere design, the Misfit Shine was a huge hit. Today it’s
-        available in stores everywhere, but Indiegogo backers were in on the
-        action first.
-      </div>
+      <div style={{ width: "300px", margin: "auto" }}>{content}</div>
     </div>
   );
 };
@@ -207,15 +235,27 @@ const WhatWeDo = () => {
         <div id="left1">
           <h2>Just a few of our favorite campaigns </h2>
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <FavCampaignComponent />
-            <FavCampaignComponent />
+            {favCardTop.map((item) => (
+              <FavCampaignComponent
+                key={item.id}
+                head={item.head}
+                count={item.count}
+                content={item.content}
+              />
+            ))}
           </div>
         </div>
         <div id="left2">
           <hr style={{ border: "1px solid lightgrey", width: "85%" }} />
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <FavCampaignComponent />
-            <FavCampaignComponent />
+            {favCardBottom.map((item) => (
+              <FavCampaignComponent
+                key={item.id}
+                head={item.head}
+                count={item.count}
+                content={item.content}
+              />
+            ))}
           </div>
         </div>
         <div id="right">
@@ -225,18 +265,30 @@ const WhatWeDo = () => {
             alt="bicycleImg"
           />
         </div>
-        <br />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-          }}
-        >
-          <div></div>
-          <div></div>
-        </div>
       </CampaignGrid>
+      <br />
+      {/* Bottom last Card Section */}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          padding: "10px",
+        }}
+      >
+        <div>
+          <img src="/WhatWeDo/motorcycle.png" alt="motorcycleImg" />
+          <h1 style={{ fontSize: "40px" }}>Ready?Explore</h1>
+          <ExploreProjectsBtn>DISCOVER PROJECTS</ExploreProjectsBtn>
+        </div>
+        <div style={{ border: "1px solid lightgrey" }} />
+        <div>
+          <img src="/WhatWeDo/spark.png" alt="sparkImg" />
+          <h1 style={{ fontSize: "40px" }}>Feeling Inspired? </h1>
+          <ExploreProjectsBtn>BECOME A ENTREPRENEUR</ExploreProjectsBtn>
+        </div>
+        <br />
+      </div>
     </>
   );
 };
