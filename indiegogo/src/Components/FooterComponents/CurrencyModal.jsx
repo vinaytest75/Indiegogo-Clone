@@ -1,39 +1,13 @@
-// import React, { useState } from "react";
-// import "antd/dist/antd.css";
-// import { Modal, Button } from "antd";
+import React from "react";
 
-// const CurrencyModal = () => {
-//   const [isModalVisible, setIsModalVisible] = useState(false);
+const CurrencyModal = () => {
+  return (
+    <>
+      <p>Some contents...</p>
+      <p>Some contents...</p>
+      <p>Some contents...</p>
+    </>
+  );
+};
 
-//   const showModal = () => {
-//     setIsModalVisible(true);
-//   };
-
-//   const handleOk = () => {
-//     setIsModalVisible(false);
-//   };
-
-//   const handleCancel = () => {
-//     setIsModalVisible(false);
-//   };
-
-//   return (
-//     <>
-//       <Button type="primary" onClick={showModal}>
-//         Open Modal
-//       </Button>
-//       <Modal
-//         title="Basic Modal"
-//         visible={isModalVisible}
-//         onOk={handleOk}
-//         onCancel={handleCancel}
-//       >
-//         <p>Some contents...</p>
-//         <p>Some contents...</p>
-//         <p>Some contents...</p>
-//       </Modal>
-//     </>
-//   );
-// };
-
-// export { CurrencyModal };
+export { CurrencyModal };

@@ -20,9 +20,9 @@ const ExploreProjectsBtn = styled.div`
   border: 2px solid #e51075;
   color: #e51075;
   font-size: 20px;
-  width: 150px;
+  width: 200px;
   padding: 5px;
-  margin: auto;
+  margin: 10px auto;
 
   :hover {
     background-color: #e51075;
@@ -31,10 +31,12 @@ const ExploreProjectsBtn = styled.div`
 `;
 
 const CampaignGrid = styled.div`
-  margin: 50px 20px;
+  margin: 50px auto;
+  height: 900px;
+  margin-left: 5%;
   padding: 20px 5px;
   display: grid;
-  grid-template-columns: 65% 32%;
+  grid-template-columns: auto auto;
   grid-template-rows: 600px 600px;
   grid-template:
     "left1 right"
@@ -51,11 +53,13 @@ const CampaignGrid = styled.div`
   #right {
     grid-area: right;
     background-color: #d7f4ea;
-    width: 500px;
+    width: 600px;
+    margin-right: -305px;
 
     & img {
+      margin-top: 78px;
+      margin-left: -200px;
       transform: rotate(60deg);
-      height: 500px;
     }
   }
 `;
@@ -63,6 +67,8 @@ const CampaignGrid = styled.div`
 const favCardTop = [
   {
     id: 1,
+    imgSrc:
+      "https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/misfit.png",
     head: "Misfit Shine",
     count: "7,957 Backers",
     content:
@@ -70,6 +76,8 @@ const favCardTop = [
   },
   {
     id: 2,
+    imgSrc:
+      "https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/bluesmart.png",
     head: "Bluesmart",
     count: "10,984 Backers ",
     content:
@@ -80,6 +88,8 @@ const favCardTop = [
 const favCardBottom = [
   {
     id: 3,
+    imgSrc:
+      "https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/evapolar.png",
     head: "Evapolar",
     count: "6,616 Backers ",
     content:
@@ -87,6 +97,8 @@ const favCardBottom = [
   },
   {
     id: 4,
+    imgSrc:
+      "https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/super_troopers.png",
     head: "Super Troopers 2",
     count: "54,531 Backers ",
     content:
@@ -94,14 +106,10 @@ const favCardBottom = [
   },
 ];
 
-const FavCampaignComponent = ({ head, count, content }) => {
+const FavCampaignComponent = ({ imgSrc, head, count, content }) => {
   return (
     <div style={{ width: "45%", margin: "5px" }}>
-      <img
-        src="https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/bluesmart.png"
-        alt="favCampaignImg"
-        height="80px"
-      />
+      <img src={imgSrc} alt="favCampaignImg" height="80px" />
       <h3>{head}</h3>
       <p>{count}</p>
       <br />
@@ -158,6 +166,8 @@ const WhatWeDo = () => {
         </p>
       </div>
       <br />
+      <hr style={{ border: "1px solid lightgrey" }} />
+      <br />
 
       {/* Join Journey Section */}
       <div>
@@ -191,7 +201,7 @@ const WhatWeDo = () => {
       <br />
 
       {/* Delivery Daily Section */}
-      <div>
+      <div style={{ backgroundColor: "#f5f5f5", padding: "150px auto" }}>
         <h1>Great finds, delivered daily</h1>
         <p style={{ fontSize: "20px" }}>
           We surface the best and brightest of Indiegogo in our newsletter. Sign
@@ -222,7 +232,10 @@ const WhatWeDo = () => {
           </button>
         </div>
         <div>
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            style={{ marginLeft: "-9%", marginRight: "-8%" }}
+          />
           <span style={{ fontSize: "12px" }}>
             I agree to the Terms of Use and have read and understand the Privacy
             Policy
@@ -238,6 +251,7 @@ const WhatWeDo = () => {
             {favCardTop.map((item) => (
               <FavCampaignComponent
                 key={item.id}
+                imgSrc={item.imgSrc}
                 head={item.head}
                 count={item.count}
                 content={item.content}
@@ -251,6 +265,7 @@ const WhatWeDo = () => {
             {favCardBottom.map((item) => (
               <FavCampaignComponent
                 key={item.id}
+                imgSrc={item.imgSrc}
                 head={item.head}
                 count={item.count}
                 content={item.content}
@@ -259,7 +274,6 @@ const WhatWeDo = () => {
           </div>
         </div>
         <div id="right">
-          Right
           <img
             src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_scale,h_740/v1/what_we_do/funding_hero_desktop_foreground.png"
             alt="bicycleImg"
@@ -267,6 +281,7 @@ const WhatWeDo = () => {
         </div>
       </CampaignGrid>
       <br />
+
       {/* Bottom last Card Section */}
       <div
         style={{
@@ -274,6 +289,7 @@ const WhatWeDo = () => {
           flexDirection: "row",
           justifyContent: "space-evenly",
           padding: "10px",
+          margin: "50px 15%",
         }}
       >
         <div>
@@ -281,11 +297,13 @@ const WhatWeDo = () => {
           <h1 style={{ fontSize: "40px" }}>Ready?Explore</h1>
           <ExploreProjectsBtn>DISCOVER PROJECTS</ExploreProjectsBtn>
         </div>
-        <div style={{ border: "1px solid lightgrey" }} />
+        <div style={{ border: "1px solid lightgrey", height: "auto" }} />
         <div>
           <img src="/WhatWeDo/spark.png" alt="sparkImg" />
           <h1 style={{ fontSize: "40px" }}>Feeling Inspired? </h1>
-          <ExploreProjectsBtn>BECOME A ENTREPRENEUR</ExploreProjectsBtn>
+          <ExploreProjectsBtn>
+            <span>BECOME A ENTREPRENEUR</span>
+          </ExploreProjectsBtn>
         </div>
         <br />
       </div>
