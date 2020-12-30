@@ -15,11 +15,10 @@ const CampaignStyle = styled.div`
 const CampaignCard = styled.div`
   border: 1px solid lightgrey;
   margin: 10px;
-  font-weight: 300;
-  width: 400px;
-  height: 225px;
+  width: 450px;
+  height: auto;
   align-text: center;
-  padding: 40px 32px;
+  padding: 20px 20px;
 
   :hover {
     box-shadow: 1px 8px 10px grey;
@@ -44,9 +43,9 @@ const Campaign = () => {
             Indiegogo is crowdfunding platform helping <br /> entrepreneurial
             ideas come to life.
           </div>
-          <br />
-          <div style={{ color: "grey" }}>5% platform fee</div>
-          <br />
+          <div style={{ color: "lightgrey", margin: "15px auto" }}>
+            5% platform fee
+          </div>
           <div>
             <img src="/HomePage/IndiegogoLogo.png" alt="IndiegogoLogo" />
           </div>
@@ -57,9 +56,9 @@ const Campaign = () => {
             GoFundMe is the world's largest and most trust free <br /> social
             fundraising platform.
           </div>
-          <br />
-          <div style={{ color: "grey" }}>0% platform fee</div>
-          <br />
+          <div style={{ color: "lightgrey", margin: "15px auto" }}>
+            0% platform fee
+          </div>
           <div>
             <img src="/CampaignPage/gofundme.png.png" alt="IndiegogoLogo" />
           </div>
