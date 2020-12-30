@@ -104,8 +104,9 @@ class Navbar extends React.Component {
                   height="20px"
                 />
               </NavLink>
-              {leftLinks.map((item) => (
+              {leftLinks.map((item, i) => (
                 <NavLink
+                  key={i}
                   to={item.to}
                   style={{
                     textDecoration: "none",
@@ -128,8 +129,9 @@ class Navbar extends React.Component {
               </NavLink>
             </div>
             <div>
-              {rightLinks.map((item) => (
+              {rightLinks.map((item, i) => (
                 <NavLink
+                  key={i}
                   to={item.to}
                   style={{
                     textDecoration: "none",

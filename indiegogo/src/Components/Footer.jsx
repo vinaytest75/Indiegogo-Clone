@@ -51,17 +51,37 @@ const BottomIcon = styled.div`
   }
 `;
 
+const currencies = [
+  "UAE Dirham (AED)",
+  " $ Australian Dollar (AUD)",
+  "R$ Brazilian Real (BRL)",
+  "$ Canadian Dollar (CAD)",
+  "Fr  Swiss Franc (CHF)",
+  "€ Euro (EUR)",
+  "₹ Indian Rupee (INR)",
+  "¥ Japanese Yen (JPY)",
+  "$ US Dollar (USD)",
+];
+
 class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       modalVisibleCurrency: false,
+      currency: "₹ Indian Rupee (INR)",
     };
   }
 
   setModalVisibleCurrency(modalVisibleCurrency) {
     this.setState({ modalVisibleCurrency });
   }
+
+  handleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({
+      [name]: value,
+    });
+  };
 
   render() {
     return (
@@ -153,18 +173,22 @@ class Footer extends React.Component {
         <BottomIcon>
           <div>
             <button onClick={() => this.setModalVisibleCurrency(true)}>
-              Indian Rupee(INR)
+              {this.state.currency}
             </button>
 
             {/* Currency Modal */}
             <Modal
               centered
-              width={350}
+              width={600}
               visible={this.state.modalVisibleCurrency}
               onOk={() => this.setModalVisibleCurrency(false)}
               onCancel={() => this.setModalVisibleCurrency(false)}
             >
-              <CurrencyModal />
+              <CurrencyModal
+                currency={this.state.currency}
+                currencies={currencies}
+                handleChange={this.handleChange}
+              />
             </Modal>
           </div>
           <div>
