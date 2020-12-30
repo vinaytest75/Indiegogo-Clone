@@ -13,7 +13,6 @@ class AppContextProvider extends React.Component {
     this.handleAuthentication = this.handleAuthentication.bind(this)
   }
   handleAuthentication({email,password}){
-   
     axios({
         method:"post",
         url:"https://reqres.in/api/login",

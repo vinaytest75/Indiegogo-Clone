@@ -5,6 +5,8 @@ import { Modal } from "antd";
 import "antd/dist/antd.css";
 import LoginPopUpModal from "./RouteComponents/LoginPopUpModal";
 import SignUp from "./RouteComponents/SignUpModal/SignUp";
+import { NavbarUser } from "./NavbarComponents/NavbarUser";
+import { UserModal } from "./NavbarComponents/UserModal";
 
 const NavbarStyle = styled.div`
   display: flex;
@@ -54,6 +56,8 @@ class Navbar extends React.Component {
     this.state = {
       modalVisibleLogin: false,
       modalVisibleSignUp: false,
+      modalVisibleUser: false,
+      isAuth: true,
     };
   }
 
@@ -65,7 +69,12 @@ class Navbar extends React.Component {
     this.setState({ modalVisibleSignUp });
   }
 
+  setModalVisibleUser(modalVisibleUser) {
+    this.setState({ modalVisibleUser });
+  }
+
   render() {
+    const { isAuth } = this.state;
     return (
       <NavbarStyle>
         <div>
@@ -112,11 +121,40 @@ class Navbar extends React.Component {
               {item.title}
             </NavLink>
           ))}
-          <Button onClick={() => this.setModalVisibleLogin(true)}>Login</Button>
-          <Button onClick={() => this.setModalVisibleSignUp(true)}>
-            Sign Up
-          </Button>
-          
+          <span
+            style={{
+              border: "1px solid lightgrey",
+              width: "0px",
+            }}
+          />
+          {isAuth ? (
+            <span onClick={() => this.setModalVisibleUser(true)}>
+              <NavbarUser />
+            </span>
+          ) : (
+            <>
+              <Button onClick={() => this.setModalVisibleLogin(true)}>
+                Login
+              </Button>
+              <Button onClick={() => this.setModalVisibleSignUp(true)}>
+                Sign Up
+              </Button>
+            </>
+          )}
+
+          {/* User Modal*/}
+          <Modal
+            width={170}
+            closable={false}
+            visible={this.state.modalVisibleUser}
+            onOk={() => this.setModalVisibleUser(false)}
+            onCancel={() => this.setModalVisibleUser(false)}
+            footer={null}
+            style={{ float: "right", margin: "-40px 0px" }}
+          >
+            <UserModal />
+          </Modal>
+
           {/* Login Button Modal*/}
           <Modal
             centered
