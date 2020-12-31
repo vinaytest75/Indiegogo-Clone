@@ -21,12 +21,20 @@ const NavbarStyle = styled.div`
     font-size: 17px;
     text-decoration: none;
     color: black;
+
+    & :hover {
+      color: #e51075;
+    }
   }
 `;
 
 const Button = styled.button`
   background-color: white;
   border: none;
+
+  & :hover {
+    color: #e51075;
+  }
 `;
 
 const leftLinks = [
@@ -81,6 +89,14 @@ class Navbar extends React.Component {
     });
   };
 
+  changeTextColor(e) {
+    e.target.style.color = "#e51075";
+  }
+
+  reverseTextColor(e) {
+    e.target.style.color = "black";
+  }
+
   render() {
     const { isAuth, showSearchBar } = this.state;
     return (
@@ -114,6 +130,8 @@ class Navbar extends React.Component {
                     color: "black",
                   }}
                   activeStyle={{ color: "black" }}
+                  onMouseEnter={this.changeTextColor}
+                  onMouseOut={this.reverseTextColor}
                 >
                   {item.title}
                 </NavLink>
@@ -139,6 +157,8 @@ class Navbar extends React.Component {
                     color: "black",
                   }}
                   activeStyle={{ color: "black" }}
+                  onMouseEnter={this.changeTextColor}
+                  onMouseOut={this.reverseTextColor}
                 >
                   {item.title}
                 </NavLink>
