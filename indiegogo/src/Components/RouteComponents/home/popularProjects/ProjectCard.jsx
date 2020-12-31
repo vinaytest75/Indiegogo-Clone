@@ -1,5 +1,5 @@
 import React from "react"
-import  data from "../data.json"
+import  data from "../../data.json"
 import Styles from "./ProjectCard.module.css"
 const ProjectCard  = () => {
     console.log(data);
@@ -10,7 +10,7 @@ const ProjectCard  = () => {
                     <div key = {index} className={Styles.cardItems} style={{width: "275px"}}>
                         <div style = {{ minHeight: "300px" }}>
                             <img src={item.avatar} className="card-img-top" alt={item.name} />
-                            <div  className="card-body">
+                            <div style = {{height: "100px"}}  className="card-body">
                                 <h5 style= {{fontSize: "17px"}} className="card-title">{item.name}</h5>
                                 <p style= {{fontSize: "12px"}} className="card-text">{item.description}</p>
                             </div>

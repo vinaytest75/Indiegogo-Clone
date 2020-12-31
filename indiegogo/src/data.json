@@ -87,5 +87,27 @@
             "name": "Flynova Pro:Boomerang spinner with endless tricks!",
             "description": "Dynamic lights｜Safe for children｜Drop-resistant｜Tripled battery life"
         }
+    ],
+    "collectionsItemData": [
+        {
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608749561/wbs5kbkhzdovlusixoyy.png",
+            "heading": "10 Cool & Clever Finds",
+            "description": "Our roundup of standout projects"
+        },
+        {
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1609170685/q3hia70runqalpyiwvcd.jpg",
+            "heading": "Team Favorites",
+            "description": "ECLLPSE: Portable SSD & more team favorites"
+        },
+        {
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1597692648/t5nvsqhmxvwgk8cgrtac.png",
+            "heading": "Join the Conversation",
+            "description": "These campaigners want to hear from you"
+        },
+        {
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1605115358/hxiowuaa246quq6fanoc.png",
+            "heading": "InDemand Superstars",
+            "description": "These campaigns are crowd favorites"
+        }
     ]
 }
