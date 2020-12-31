@@ -7,3 +7,4 @@
 5. npm install antd
 6. npm install --save @ant-design/icons //for ant-design icons
 7. npm install -bootstrap react-bootstrap
+8. npm install react-responsive-carousel // to embded video inside corousal
