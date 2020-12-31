@@ -22,25 +22,25 @@ const Routes = () => {
           borderBottom: "none",
         }}
       />
-      {/* <Switch>
-        <Route path="/explore" component={(props) => <Explore {...props} />} />
+      <Switch>
+        {/* <Route path="/explore" component={(props) => <Explore {...props} />} /> */}
         <Route
           path="/whatwedo"
           component={(props) => <WhatWeDo {...props} />}
         />
-        <Route path="/search" component={(props) => <Search {...props} />} />
+        {/* <Route path="/search" component={(props) => <Search {...props} />} />
         <Route
           path="/entrepreneurs"
           component={(props) => <ForEntrepreneurs {...props} />}
-        />
+        /> */}
         <Route
           path="/campaign"
           component={(props) => <Campaign {...props} />}
         />
-        <Route path="/login" component={(props) => <Login {...props} />} />
-        <Route path="/" component={(props) => <Home {...props} />} />
+        {/* <Route path="/login" component={(props) => <Login {...props} />} />
+        <Route path="/" component={(props) => <Home {...props} />} /> */}
       </Switch>
-      <Footer /> */}
+      <Footer />
     </>
   );
 };
