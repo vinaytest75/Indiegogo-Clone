@@ -1,0 +1,22 @@
+.cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 600px 600px 600px;
+  padding: 50px;
+}
+
+.itemType {
+  color: violet;
+  font-size: large;
+}
+
+.itemName {
+  font-size: x-large;
+  padding-top: 5px;
+  line-height: normal;
+}
+
+.itemName :hover {
+  text-decoration: line-through;
+}
