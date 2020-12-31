@@ -5,24 +5,33 @@ import Styles from "./CollectionCard.module.css"
 const CollectionCard = () => {
     return (
         <div className = {Styles.cards}>
-            {data.popular_projects.map ( item => {
+            {data.collectionsPageData.map ( item => {
                 return <Card style={{ width: "100%" , height: "600px"}}>
-                            <Card.Img variant="top" src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/e7gfbgzombi2reeeung9.jpg" />
+                            <Card.Img variant="top" src={item.avatar} />
                             <Card.Body>
                                 <div style= {{borderBottom : "1px solid cyan"}}>
                                     <p className = {Styles.itemType}>{item.type}</p>
                                 </div>
-                                <p className = {Styles.itemName}  >{item.name}</p>
-                                <p className = {Styles.description}>{item.description}</p>
-                                <div>
-                                    <p>{item.price}</p>
-                                    <div >
-                                        <p>{item.currency}</p>
-                                        <p>{item.percentage}</p>
-                                    </div>
+                                <div className = {Styles.lineHeight}>
+                                    <p className = { Styles.itemName }  >{item.name}</p>
+                                    <p className = {Styles.description}>{item.description}</p>
                                 </div>
-                                <div className = {Styles.horizontalbar} ></div>
+                                
+                                
                             </Card.Body>
+                            <Card.Footer style = {{backgroundColor: "white", border: "0px solid white"}} >
+                                <div style = {{paddingTop: "15px", backgroundColor: "white"}}>
+                                        <div className= {Styles.floatLeft}>
+                                            <p className= {Styles.price}>{item.price}</p>
+                                        </div>
+                                        
+                                        <div style = {{width: "450px"}} className= {Styles.floatLeft} >
+                                            <p className= {Styles.curency}>{item.currency}</p>
+                                            <p className= {Styles.floatRight}>{item.percentage}</p>
+                                        </div>
+                                        <div className  = {Styles.horizontalbar} ></div>
+                                </div>
+                            </Card.Footer>
                         </Card>
             })}
             

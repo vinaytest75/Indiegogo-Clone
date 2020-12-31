@@ -1,0 +1,57 @@
+.heading {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.dummyDiv {
+  width: 150px;
+  height: 4px;
+  margin-left: 600px;
+  background-color: crimson;
+}
+
+.description {
+  text-align: center;
+  margin-left: 320px;
+  margin-right: 320px;
+  font-size: larger;
+  color: #0d081f;
+}
+
+.buttonsDiv {
+  padding-left: 400px;
+}
+
+.shareButton {
+  width: 180px;
+  margin: 10px;
+  padding: 9px;
+  padding-left: 0px;
+}
+
+.icon {
+  padding-bottom: 4px;
+  padding-right: 5px;
+  width: 21px;
+  height: 21px;
+  /* background: white; */
+}
+
+.iconTwitter {
+  width: 21px;
+  height: 21px;
+  margin-bottom: 3px;
+  padding: 1px;
+  background: white;
+  border-radius: 10px;
+}
+
+.loveButton {
+  width: 180px;
+  margin: 10px;
+  padding: 9px;
+  padding-left: 0px;
+  background: white;
+  color: black;
+}
