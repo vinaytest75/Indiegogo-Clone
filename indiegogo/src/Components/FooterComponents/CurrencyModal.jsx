@@ -1,39 +1,30 @@
-// import React, { useState } from "react";
-// import "antd/dist/antd.css";
-// import { Modal, Button } from "antd";
+import React from "react";
 
-// const CurrencyModal = () => {
-//   const [isModalVisible, setIsModalVisible] = useState(false);
+class CurrencyModal extends React.Component {
+  render() {
+    const { currencies, handleChange } = this.props;
+    const { currency } = this.props;
+    return (
+      <>
+        <h1>Currency Settings </h1>
+        <p>
+          Changing the currency will allow you to view estimates of the campaign
+          goal and contribution amounts in the currency you choose.
+        </p>
+        <p>
+          You will still be charged in the campaign’s original currency. The
+          amount charged by your card issuer in your local currency may differ
+          from our estimate, based on their exchange rate and any applicable
+          fees.
+        </p>
+        <select name="currency" value={currency} onChange={handleChange}>
+          {currencies.map((item) => (
+            <option key={item}>{item}</option>
+          ))}
+        </select>
+      </>
+    );
+  }
+}
 
-//   const showModal = () => {
-//     setIsModalVisible(true);
-//   };
-
-//   const handleOk = () => {
-//     setIsModalVisible(false);
-//   };
-
-//   const handleCancel = () => {
-//     setIsModalVisible(false);
-//   };
-
-//   return (
-//     <>
-//       <Button type="primary" onClick={showModal}>
-//         Open Modal
-//       </Button>
-//       <Modal
-//         title="Basic Modal"
-//         visible={isModalVisible}
-//         onOk={handleOk}
-//         onCancel={handleCancel}
-//       >
-//         <p>Some contents...</p>
-//         <p>Some contents...</p>
-//         <p>Some contents...</p>
-//       </Modal>
-//     </>
-//   );
-// };
-
-// export { CurrencyModal };
+export { CurrencyModal };

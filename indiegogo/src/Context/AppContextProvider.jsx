@@ -7,9 +7,30 @@ class AppContextProvider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      isAuth:false,
       data: [],
     };
+    this.handleAuthentication = this.handleAuthentication.bind(this)
   }
+  handleAuthentication({email,password}){
+    axios({
+        method:"post",
+        url:"https://reqres.in/api/login",
+        data:{
+            email,
+            password
+        }
+    })
+    .then((res) =>{
+        this.setState({
+            isAuth:true
+        })
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+
+}
 
   componentDidMount() {
     axios({
@@ -20,7 +41,8 @@ class AppContextProvider extends React.Component {
 
   render() {
     const { data } = this.state;
-    const value = { data };
+    const {handleAuthentication} = this
+    const value = { data,handleAuthentication };
     return (
       <AppContext.Provider value={value}>
         {this.props.children}
