@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../data.json";
+import {Link} from  "react-router-dom"
 import {
   HeartOutlined,
   LeftCircleOutlined,
@@ -70,9 +71,11 @@ const ProjectCard = () => {
                 className=" text-muted p-1"
                 style={{ position: "relative", top: "20px" }}
               >
+                <Link to ="/popularPage/story" style ={{textDecoration: "none"}} >
                 <p style={{ fontSize: "13px", padding: "4px 6px 0px 20px" }}>
                   {item.category}
                 </p>
+                </Link>
                 <div style={{ padding: "1px 0px 0px 20px" }}>
                   <div style={{ float: "left" }}>
                     <h4>

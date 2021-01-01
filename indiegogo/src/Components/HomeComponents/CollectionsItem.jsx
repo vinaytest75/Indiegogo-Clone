@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./CollectionsItem.module.css";
 import data from "../../data.json";
+import { Link } from "react-router-dom"
 
 const CollectionsItem = () => {
   return (
@@ -35,7 +36,9 @@ const CollectionsItem = () => {
               <p
                 style={{ float: "right", fontWeight: "600", fontSize: "small" }}
               >
-                SEE COLLECTION
+                <Link to = "/collections" style = {{textDecoration: "none"}}>
+                  SEE COLLECTION
+                </Link>
                 <img
                   style={{
                     width: "13px",
