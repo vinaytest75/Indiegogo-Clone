@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "./LoginPage.module.css";
+import { AppContext } from "../../Context/AppContextProvider";
 // import axios from "axios";
 
 class LoginPopUpModal extends Component {
@@ -10,7 +11,7 @@ class LoginPopUpModal extends Component {
       password: "",
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleAuthentication = this.handleAuthentication.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
   }
   handleChange(e) {
     const { value, name } = e.target;
@@ -18,13 +19,14 @@ class LoginPopUpModal extends Component {
       [name]: value,
     });
   }
-  handleAuthentication() {
+
+  handleLogin() {
     const { email, password } = this.state;
     console.log(this.context);
-    const { handleAuthentication } = this.context;
-
-    handleAuthentication({ email, password });
+    const { handleAuth } = this.context;
+    handleAuth({ email, password });
   }
+
   render() {
     const { email, password } = this.state;
     return (
@@ -56,7 +58,9 @@ class LoginPopUpModal extends Component {
         <div>
           <span className={styles.floatdisplay}>Forgot your Password</span>
         </div>
-        <button className={styles.loginbtn}>LOG IN</button>
+        <button className={styles.loginbtn} onClick={this.handleLogin}>
+          LOG IN
+        </button>
         <div className={styles.option}>OR</div>
         <div className={styles.bluebtn}>
           <img
@@ -82,5 +86,6 @@ class LoginPopUpModal extends Component {
     );
   }
 }
-// LoginPopUpModal.contextType = AppContext;
+
+LoginPopUpModal.contextType = AppContext;
 export default LoginPopUpModal;

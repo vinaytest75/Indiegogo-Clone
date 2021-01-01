@@ -10,7 +10,7 @@ const CollectionsItem = () => {
           <div key={item.name}>
             <div
               style={{
-                background: `url(${item.avatar})`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${item.avatar})`,
                 backgroundSize: "cover",
                 height: "320px",
                 width: "620px",
