@@ -1,11 +1,11 @@
-import React from "react";
-import data from "../../data.json";
-import {
-  HeartOutlined,
-  LeftCircleOutlined,
-  RightCircleOutlined,
-} from "@ant-design/icons";
+import React from 'react';
+import data from "../../ExploreProject.json";
 import styled from "styled-components";
+import {
+    HeartOutlined,
+    LeftCircleOutlined,
+    RightCircleOutlined,
+  } from "@ant-design/icons";
 
 const Card = styled.div`
   :hover {
@@ -13,28 +13,19 @@ const Card = styled.div`
     -webkit-transition: box-shadow 0.1s ease-in;
   }
 `;
+const GridDisplay = styled.div`
+display:grid;
+grid-template-rows:auto auto auto;
+grid-template-columns:auto auto auto;
+grid-gap:20px`
 
-const ProjectCard = () => {
-  return (
-    <div className="container-fluid m-5 text-left">
-      <div style={{ marginLeft: "9%" }} className="text-left h3">
-        Popular Projects
-        <span style={{ margin: "76%" }}>
-          <LeftCircleOutlined style={{ margin: "5px", fontSize: "30px" }} />
-          <RightCircleOutlined style={{ margin: "5px", fontSize: "30px" }} />
-        </span>
-      </div>
-      <div
-        className="container-fluid"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-around",
-          padding: "20px 100px",
-        }}
-      >
-        {data.popular_projects.map((item, index) => {
+function ProjectBox(props) {
+  //  console.log(data.popular_projects)
+    return (
+         <GridDisplay>
+             {data.popular_projects.map((item, index) => {
           return (
+              
             <Card
         
               key={index}
@@ -49,13 +40,14 @@ const ProjectCard = () => {
                 />
                 <div style={{ height: "100px" }} className="card-body">
                   <div>
-                    <span style={{ color: "#268366" }}>FUNDING</span>
+                    <span style={{ color: "#268366",textAlign:"left,",marginLeft:"-140px" }}>FUNDING</span>
                     <span style={{ float: "right" }}>
                       <HeartOutlined
-                        style={{ fontSize: "20px", color: "lightgrey" }}
+                        style={{ fontSize: "20px", color: "lightgrey" ,marginBottom:"5px"}}
                       />
                     </span>
                   </div>
+               
                   <h5 style={{ fontSize: "17px" }} className="card-title">
                     {item.name}
                   </h5>
@@ -107,9 +99,10 @@ const ProjectCard = () => {
             </Card>
           );
         })}
-      </div>
-    </div>
-  );
-};
+            
+        </GridDisplay>
 
-export default ProjectCard;
+    );
+}
+
+export default ProjectBox;
