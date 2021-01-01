@@ -1,0 +1,177 @@
+{
+  "popular_projects": [
+    {
+      "id": 1,
+      "avatar": "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/bidkrknv5fmapzjk6mkf",
+      "type": "FUNDING",
+      "name": "Olive Pro: 2-in-1 Hearing Aids & Bluetooth Earbuds",
+      "description": "Enhanced Hearing for Sounds, Music and Conversations. Affordable Hearing for All.",
+      "category": "AUDIO",
+      "price": "$584,644",
+      "currency": "USD raised",
+      "percentage": "2,923%",
+      "no_of_days_left": "19 days left"
+    },
+    {
+      "id": 2,
+      "avatar": "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/rkrdjuwbdswuny563vn3",
+      "type": "FUNDING",
+      "name": "inCharge X - The 100W Swiss Army Knife of Cables",
+      "description": "The most crowdfunded cable EVER is back! Tiny, Universal, Ultra Powerful keyring cable.",
+      "category": "Phones & Accessories",
+      "price": "€330,772",
+      "currency": "EUR raised",
+      "percentage": "3,308%",
+      "no_of_days_left": "14 days left"
+    },
+    {
+      "id": 3,
+      "avatar": "https://c4.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/ebxsux9m4tibwkfrkcyc",
+      "type": "FUNDING",
+      "name": "TurboHub: World’s Fastest SSD & Multiport Adapter",
+      "description": "4TB SSD  + Thunderbolt 3 + USB 3.1 Gen2 + USB Gen 3.1+ HDMI 2.0  + SD UHS-II + 1000Mbps Ethernet",
+      "category": "Phones & Accessories",
+      "price": "$1,391,668",
+      "currency": "HKD raised",
+      "percentage": "1,392%",
+      "no_of_days_left": "32 days left"
+    },
+    {
+      "id": 4,
+      "avatar": "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/e8xlpyytlkpabfgfcpny",
+      "type": "FUNDING",
+      "name": "Edeskhub: The Best Smart Desk for Healthy Working.",
+      "description": "700mm Adjustable Height | Wireless Charging | 100W Power Delivery Hub | Relax While at Work",
+      "category": "HOME",
+      "price": "$365,573",
+      "currency": "USD raised",
+      "percentage": "7,311%",
+      "no_of_days_left": "15 days left"
+    }
+  ],
+  "banners": [
+    {
+      "id": 6,
+      "type": ["button", "GOGOPICKS"],
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608750043/ebnhzzgy0s4bjckiicok.jpg",
+      "name": "Olive Pro: 2-in-1 Hearing Aids & Bluetooth Earbuds",
+      "description": "Enhanced Hearing for Sounds, Music and Conversations. Affordable Hearing for All."
+    },
+    {
+      "id": 7,
+      "type": ["button", "GOGOPICKS"],
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608748918/i4znoxv6wmueauzeemks.png",
+      "name": "inCharge X - The 100W Swiss Army Knife of Cables",
+      "description": "The most crowdfunded cable EVER is back! Tiny, Universal, Ultra Powerful keyring cable."
+    },
+    {
+      "id": 8,
+      "type": ["text", "FEATURED"],
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608658306/sq99rrhy9cl65o0z6kva.jpg",
+      "name": "Aura Mate Pro - Best Premium Updated Scanner Yet",
+      "description": "Dual-Camera, Document Camera, Use With Zoom, 16 MegaPixel, Curve-Flatten Tech, Scan A Book In 8 Mins"
+    },
+    {
+      "id": 9,
+      "type": ["text", "FEATURED"],
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608749866/x64zyvkgbpphl462hiet.jpg",
+      "name": "The Phantom Direct Drive Electric Skateboard",
+      "description": "30 MPH, 30 Mile Range. Next Gen 21700 Lithium Battery and Carbon Fiber Drop Deck You Can Count On."
+    },
+    {
+      "id": 10,
+      "type": ["text", "FEATURED"],
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608750043/ebnhzzgy0s4bjckiicok.jpg",
+      "name": "Flynova Pro:Boomerang spinner with endless tricks!",
+      "description": "Dynamic lights｜Safe for children｜Drop-resistant｜Tripled battery life"
+    }
+  ],
+  "collectionsItemData": [
+    {
+      "id": 11,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1608749561/wbs5kbkhzdovlusixoyy.png",
+      "heading": "10 Cool & Clever Finds",
+      "description": "Our roundup of standout projects"
+    },
+    {
+      "id": 12,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1609170685/q3hia70runqalpyiwvcd.jpg",
+      "heading": "Team Favorites",
+      "description": "ECLLPSE: Portable SSD & more team favorites"
+    },
+    {
+      "id": 13,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1597692648/t5nvsqhmxvwgk8cgrtac.png",
+      "heading": "Join the Conversation",
+      "description": "These campaigners want to hear from you"
+    },
+    {
+      "id": 14,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1605115358/hxiowuaa246quq6fanoc.png",
+      "heading": "InDemand Superstars",
+      "description": "These campaigns are crowd favorites"
+    }
+  ],
+  "collectionsPageData": [
+    {
+      "id": 15,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/e7gfbgzombi2reeeung9.jpg",
+      "type": "FUNDING",
+      "name": "Rocket eBike: Self-Charging, 100-Mile Range eBike",
+      "description": "Ride without limits on a 100-mile range, all-terrain eBike with regenerative braking & folding frame",
+      "price": "$1,460,336 ",
+      "currency": "USD raised",
+      "percentage": "4,643%"
+    },
+    {
+      "id": 16,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/yzctvmujbqf08owi1rvp.jpg",
+      "type": "FUNDING",
+      "name": "ElecHive Portable & Universal Super Power Station",
+      "description": "2400Wh Capacity / 2200W Output / 34lbs Portable / Ultimate battery capacity at such small size.",
+      "price": "$1,704,776",
+      "currency": "USD raised",
+      "percentage": "34,096%"
+    },
+    {
+      "id": 17,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/semw4lqkmuw9vyiic1dk.jpg",
+      "type": "FUNDING",
+      "name": "Flynova Pro:Boomerang spinner with endless tricks!",
+      "description": "The boomerang spinner with endless tricks",
+      "price": "$1,226,527 ",
+      "currency": "USD raised",
+      "percentage": "22,447%"
+    },
+    {
+      "id": 18,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/eihgxwej2e0btpdbdts0.jpg",
+      "type": "FUNDING",
+      "name": "The FlexBEAM : Revolutionary Red Light Therapy",
+      "description": "",
+      "price": "$950,965 ",
+      "currency": "USD raised",
+      "percentage": "3,249%"
+    },
+    {
+      "id": 19,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/p5kpiihw7mckd5f36nob.jpg",
+      "type": "FUNDING",
+      "name": "CarDroid Car PC: USB Computer Dongle for Vehicles",
+      "description": "CarDroid is an Octa-core Car Computer, Up to 4GB RAM 64gb ROM, GPS, Bluetooth, Mic, MicroSD slot",
+      "price": "$2,161,035 ",
+      "currency": "HKD raised",
+      "percentage": "48,627%"
+    },
+    {
+      "id": 20,
+      "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/solk3ssxqarjgraodajo.jpg",
+      "type": "FUNDING",
+      "name": "Between Pro: The best-sounding wireless earbuds.",
+      "description": "World-first triple driver earbuds. Industry-leading battery life, technology & ergonomics.",
+      "price": "$353,777 ",
+      "currency": "USD raised",
+      "percentage": "6,628%"
+    }
+  ]
+}

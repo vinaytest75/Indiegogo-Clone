@@ -2,12 +2,11 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Home } from "./RouteComponents/Home";
-import { Explore } from "./RouteComponents/Explore";
+// import { Explore } from "./RouteComponents/Explore";
 import { WhatWeDo } from "./RouteComponents/WhatWeDo";
 import { Search } from "./RouteComponents/Search";
 import { ForEntrepreneurs } from "./RouteComponents/ForEntrepreneurs";
 import { Campaign } from "./RouteComponents/Campaign";
-import { Login } from "./RouteComponents/Login";
 import { Footer } from "./Footer";
 
 const Routes = () => {
@@ -16,7 +15,7 @@ const Routes = () => {
       <Navbar />
       <hr
         style={{
-          borderBottom: "0.5px solid grey",
+          border: "1px solid lightgrey",
           marginLeft: "-8px",
           width: "105%",
           borderBottom: "none",
@@ -37,8 +36,7 @@ const Routes = () => {
           path="/campaign"
           component={(props) => <Campaign {...props} />}
         />
-        {/* <Route path="/login" component={(props) => <Login {...props} />} />
-        <Route path="/" component={(props) => <Home {...props} />} /> */}
+        <Route path="/" component={(props) => <Home {...props} />} />
       </Switch>
       <Footer />
     </>
