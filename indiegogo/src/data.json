@@ -186,5 +186,46 @@
             "percentage": "6,628%"
         }
         
+    ],
+    "select_pert_data": [
+        {
+            "id": 21,
+            "avatar": "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,w_762,g_center,q_auto:best,dpr_1.0,f_auto,h_506/gn1qjecnxsbxtjdfnaji",
+            "isFeatured": true,
+            "name": "EDESKHUB-Super Early Bird",
+            "presnt_global_cost": "$199 USD ",
+            "actual_cost": "$299 USD ",
+            "offer_percentage": "(33% OFF)",
+            "cost_in_india": "₹14,538 INR",
+            "estimated_shipping": "February 2021",
+            "availability_by_product": "Only 3 left",
+            "availability_by_location": "Ships worldwide."
+        },
+        {
+            "id": 22,
+            "avatar": "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,w_762,g_center,q_auto:best,dpr_1.0,f_auto,h_506/x0k1npbcdkrzkc3a2ghs",
+            "isFeatured": false,
+            "name": "Edeskhub- Size Upgradation",
+            "presnt_global_cost": "$49 USD",
+            "actual_cost": "",
+            "offer_percentage": "",
+            "cost_in_india": "₹3,580 INR",
+            "estimated_shipping": "February 2021",
+            "availability_by_product": "72 out of 200 claimed",
+            "availability_by_location": "Ships worldwide."
+        },
+        {
+            "id": 23,
+            "avatar": "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,w_762,g_center,q_auto:best,dpr_1.0,f_auto,h_506/xcvdike0nuu0ijgfihtg",
+            "isFeatured": false,
+            "name": "EDESKHUB-Indiegogo Special",
+            "presnt_global_cost": "$209 USD",
+            "actual_cost": "$299 USD",
+            "offer_percentage": "(30% off)",
+            "cost_in_india": "₹15,269 INR",
+            "estimated_shipping": "February 2021",
+            "availability_by_product": "20 out of 100 claimed",
+            "availability_by_location": "Ships worldwide."
+        }
     ]
 }
