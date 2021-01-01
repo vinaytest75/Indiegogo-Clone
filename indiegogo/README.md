@@ -6,3 +6,5 @@
 4. npm install styled-components
 5. npm install antd
 6. npm install --save @ant-design/icons //for ant-design icons
+7. for Bootstrap support copy Bootrap CSS link in index.html
+

@@ -1,0 +1,7 @@
+.collectionDiv {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  margin: 10px 13%;
+}
