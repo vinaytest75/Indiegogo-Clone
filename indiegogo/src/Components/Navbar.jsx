@@ -8,6 +8,7 @@ import SignUp from "./RouteComponents/SignUpModal/SignUp";
 import { NavbarUser } from "./NavbarComponents/NavbarUser";
 import { UserModal } from "./NavbarComponents/UserModal";
 import { CloseOutlined, SearchOutlined } from "@ant-design/icons";
+import { AppContext, AuthContext } from "../Context/AppContextProvider";
 
 const NavbarStyle = styled.div`
   display: flex;
@@ -66,7 +67,6 @@ class Navbar extends React.Component {
       modalVisibleLogin: false,
       modalVisibleSignUp: false,
       modalVisibleUser: false,
-      isAuth: true,
       showSearchBar: false,
     };
   }
@@ -98,7 +98,8 @@ class Navbar extends React.Component {
   }
 
   render() {
-    const { isAuth, showSearchBar } = this.state;
+    const { showSearchBar } = this.state;
+    const { isAuth } = this.context;
     return (
       <>
         {showSearchBar ? (
@@ -228,4 +229,5 @@ class Navbar extends React.Component {
   }
 }
 
+Navbar.contextType = AppContext;
 export { Navbar };
