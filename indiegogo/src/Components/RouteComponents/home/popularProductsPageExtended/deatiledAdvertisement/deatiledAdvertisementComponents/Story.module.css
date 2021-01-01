@@ -1,0 +1,30 @@
+/* for the whole section */
+.page {
+  width: 50vw;
+  margin: 50px 100px 50px 70px;
+}
+/* for whole page with images and data */
+.writtenImagesDiv {
+  padding: 40px 0px 40px 0px;
+  width: 100%;
+  padding-right: 0px;
+}
+
+/* images styling */
+.imgsStyling {
+  width: 100%;
+  padding: 25px 0px 25px 0px;
+}
+
+/* for div's which have a writing part on it */
+.writeUpPart {
+  font-size: medium;
+  font-weight: 400;
+  margin: 20px 0px 20px 0px;
+}
+
+/* styling for data which is inside the span elements */
+.spanData {
+  font-size: large;
+  font-weight: 600;
+}
