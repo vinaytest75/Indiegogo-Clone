@@ -23,7 +23,8 @@ const HeadBanner = styled.div`
 `;
 const RightSection = styled.div`
 height:60%;
-width:20%;
+width:19%;
+margin-left:1.6%;
 // border:1px solid blue;
 float:left;
 padding:1%;
@@ -60,6 +61,19 @@ margin:auto;
 // border:1px solid black;
 `
 class ExploreProducts extends React.Component {
+  constructor(props){
+    super(props)
+    this.state={
+      sortByPrice:null
+    }
+    this.handleChange = this.handleChange.bind(this)
+  }
+  handleChange(e){
+    const {name,value} = e.target
+    this.setState({
+      [name]:value
+    })
+  }
   render() {
     return (
       <>
@@ -132,15 +146,15 @@ class ExploreProducts extends React.Component {
      <LeftSection>
     
      <input
-              placeholder="Search for Campaigns                                              X"
-              style={{ width: "460px",margin:"auto" }}
+              placeholder="Search for Campaigns"
+              style={{ width: "560px",margin:"auto" }}
             />
 <hr></hr>
         <SortSection>
             <div>Sort By
-        <select style = {{padding:"1.5%",marginLeft:"15px"}}>
-             <option>Trending</option>
-                <option>Most Funded</option>
+        <select style = {{padding:"1.5%",marginLeft:"15px"} } onChange = {this.handleChange} name = "sortByPrice">
+             <option value = "desc">Trending</option>
+                <option value = "asc">Most Funded</option>
                 </select>
                 </div>
         </SortSection>
@@ -150,7 +164,7 @@ class ExploreProducts extends React.Component {
        
 
             <ProjectBox>
-            <ProjectCard />
+            <ProjectCard sortValue = {this.state.sortByPrice} />
 
 
             </ProjectBox>
