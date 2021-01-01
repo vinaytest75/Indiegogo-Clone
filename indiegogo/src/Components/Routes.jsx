@@ -7,7 +7,6 @@ import { WhatWeDo } from "./RouteComponents/WhatWeDo";
 import { Search } from "./RouteComponents/Search";
 import { ForEntrepreneurs } from "./RouteComponents/ForEntrepreneurs";
 import { Campaign } from "./RouteComponents/Campaign";
-import { Login } from "./RouteComponents/Login";
 import { Footer } from "./Footer";
 
 const Routes = () => {
@@ -16,14 +15,14 @@ const Routes = () => {
       <Navbar />
       <hr
         style={{
-          borderBottom: "0.5px solid grey",
+          border: "1px solid lightgrey",
           marginLeft: "-8px",
           width: "105%",
           borderBottom: "none",
         }}
       />
       <Switch>
-        {/* <Route path="/explore" component={(props) => <Explore {...props} />} /> */}
+        <Route path="/explore" component={(props) => <Explore {...props} />} />
         <Route
           path="/whatwedo"
           component={(props) => <WhatWeDo {...props} />}
@@ -37,8 +36,7 @@ const Routes = () => {
           path="/campaign"
           component={(props) => <Campaign {...props} />}
         />
-        {/* <Route path="/login" component={(props) => <Login {...props} />} />
-        <Route path="/" component={(props) => <Home {...props} />} /> */}
+        <Route path="/" component={(props) => <Home {...props} />} />
       </Switch>
       <Footer />
     </>
