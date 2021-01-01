@@ -4,6 +4,7 @@ import ProjectCard from "../HomeComponents/ProjectCard";
 import { CollectionsItem } from "../HomeComponents/CollectionsItem";
 import { CrowdfundingBanner } from "../HomeComponents/CrowdfundingBanner";
 import { Categories } from "../HomeComponents/Categories";
+import { Journal } from "../HomeComponents/Journal";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <CollectionsItem />
       <CrowdfundingBanner />
       <Categories />
+      {/* <Journal /> */}
     </div>
   );
 };

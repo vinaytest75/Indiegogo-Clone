@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Home } from "./RouteComponents/Home";
-import { Explore } from "./RouteComponents/Explore";
+// import { Explore } from "./RouteComponents/Explore";
 import { WhatWeDo } from "./RouteComponents/WhatWeDo";
 import { Search } from "./RouteComponents/Search";
 import { ForEntrepreneurs } from "./RouteComponents/ForEntrepreneurs";
@@ -22,7 +22,7 @@ const Routes = () => {
         }}
       />
       <Switch>
-        <Route path="/explore" component={(props) => <Explore {...props} />} />
+        {/* <Route path="/explore" component={(props) => <Explore {...props} />} /> */}
         <Route
           path="/whatwedo"
           component={(props) => <WhatWeDo {...props} />}

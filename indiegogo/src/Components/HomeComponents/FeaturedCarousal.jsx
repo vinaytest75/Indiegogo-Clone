@@ -98,7 +98,7 @@ class FeaturedCarousal extends React.Component {
       <>
         <Carousel
           ref={(node) => (this.carousel = node)}
-          style={{ marginTop: "-7px" }}
+          style={{ marginTop: "-16px" }}
           effect="fade"
           dots={null}
           autoplay
