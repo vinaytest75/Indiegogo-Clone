@@ -8,7 +8,8 @@ import SignUp from "./RouteComponents/SignUpModal/SignUp";
 import { NavbarUser } from "./NavbarComponents/NavbarUser";
 import { UserModal } from "./NavbarComponents/UserModal";
 import { CloseOutlined, SearchOutlined } from "@ant-design/icons";
-import { AppContext, AuthContext } from "../Context/AppContextProvider";
+import { AppContext } from "../Context/AppContextProvider";
+import Explore from "./Explore/Explore";
 
 const NavbarStyle = styled.div`
   display: flex;
@@ -40,10 +41,6 @@ const Button = styled.button`
 
 const leftLinks = [
   {
-    to: "/explore",
-    title: "Explore",
-  },
-  {
     to: "/whatwedo",
     title: "What We Do",
   },
@@ -67,8 +64,12 @@ class Navbar extends React.Component {
       modalVisibleLogin: false,
       modalVisibleSignUp: false,
       modalVisibleUser: false,
+      exploreModalVisible:false,
       showSearchBar: false,
     };
+  }
+  setExploreModalVisible(exploreModalVisible){
+    this.setState({exploreModalVisible})
   }
 
   setModalVisibleLogin(modalVisibleLogin) {
@@ -121,6 +122,20 @@ class Navbar extends React.Component {
                   height="20px"
                 />
               </NavLink>
+              <Button onClick={() => this. setExploreModalVisible(true)}>
+                 Explore
+                  </Button>
+                     {/* Explore Modal*/}
+              <Modal
+                width={1300}
+               centered
+                visible={this.state.exploreModalVisible}
+              
+                onCancel={() => this.setExploreModalVisible(false)}
+                footer={null}
+             >
+             <Explore />
+              </Modal>
               {leftLinks.map((item, i) => (
                 <NavLink
                   key={i}

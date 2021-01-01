@@ -36,9 +36,10 @@ const ProjectCard = () => {
         {data.popular_projects.map((item, index) => {
           return (
             <Card
+        
               key={index}
               className="m-2 border"
-              style={{ width: "275px", height: "550px" }}
+              style={{ width: "275px", height: "580px" }}
             >
               <div style={{ minHeight: "auto" }}>
                 <img
