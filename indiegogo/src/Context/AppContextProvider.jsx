@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 
 const AppContext = React.createContext();
 
@@ -7,42 +6,29 @@ class AppContextProvider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isAuth:false,
+      isAuth: false,
       data: [],
     };
-    this.handleAuthentication = this.handleAuthentication.bind(this)
+    this.handleAuth = this.handleAuth.bind(this);
   }
-  handleAuthentication({email,password}){
-    axios({
-        method:"post",
-        url:"https://reqres.in/api/login",
-        data:{
-            email,
-            password
-        }
-    })
-    .then((res) =>{
-        this.setState({
-            isAuth:true
-        })
-    })
-    .catch((err)=>{
-        console.log(err)
-    })
 
-}
-
-  componentDidMount() {
-    axios({
-      method: "get",
-      url: "https://indiegogo-clone.herokuapp.com/db",
-    }).then((res) => console.log(res));
+  handleAuth({ email, password }) {
+    if (email === "vinay@gmail.com" && password === "vinay") {
+      this.setState({ isAuth: true });
+    } else {
+      console.log("error");
+    }
   }
 
   render() {
-    const { data } = this.state;
-    const {handleAuthentication} = this
-    const value = { data,handleAuthentication };
+    console.log(this.state.isAuth);
+    const { data, isAuth } = this.state;
+    const { handleAuth } = this;
+    const value = {
+      data,
+      isAuth,
+      handleAuth,
+    };
     return (
       <AppContext.Provider value={value}>
         {this.props.children}
