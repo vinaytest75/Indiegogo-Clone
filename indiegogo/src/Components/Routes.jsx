@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Home } from "./RouteComponents/Home";
-// import { Explore } from "./RouteComponents/Explore";
 import { WhatWeDo } from "./RouteComponents/WhatWeDo";
 import { Search } from "./RouteComponents/Search";
 import { ForEntrepreneurs } from "./RouteComponents/ForEntrepreneurs";
@@ -13,6 +12,7 @@ import DeatiledAdvertisementRoutes from "./HomeComponents/popularProductsPageExt
 import Story from "./HomeComponents/popularProductsPageExtended/deatiledAdvertisement/deatiledAdvertisementComponents/Story"
 import Faq from "./HomeComponents/popularProductsPageExtended/deatiledAdvertisement/deatiledAdvertisementComponents/Faq"
 import PopularProductsPage from "./HomeComponents/popularProductsPageExtended/PopularProductsPage"
+import { ExploreProducts } from "./ExploreProject/Project";
 const Routes = () => {
   return (
     <>
@@ -29,7 +29,6 @@ const Routes = () => {
         }}
       />
       <Switch>
-        {/* <Route path="/explore" component={(props) => <Explore {...props} />} /> */}
         <Route
           path="/whatwedo"
           component={(props) => <WhatWeDo {...props} />}
@@ -46,6 +45,12 @@ const Routes = () => {
         {/* <Route path = "/popularPage" render = {(props) => <PopularProductsPage {...props} />} /> */}
         <Route path="/" exact render ={(props) => <Home {...props} />} />
         <Route path = "/collections" render = {(props) => <CollectionsPage {...props} />} />
+        <Route
+          exact
+          path="/explore_products"
+          render={(props) => <ExploreProducts {...props} />}
+        />
+        <Route exact path="/" component={(props) => <Home {...props} />} />
       </Switch>
       <Route path = "/popularPage" render = {(props) => <PopularProductsPage {...props} />} />
       <Route path = "/popularPage/story" render = {(props) => <Story {...props} /> } />
