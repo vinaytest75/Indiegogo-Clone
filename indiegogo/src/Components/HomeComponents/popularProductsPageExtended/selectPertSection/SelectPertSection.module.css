@@ -1,0 +1,15 @@
+.spanClass {
+  font-size: 14px;
+  font-weight: 400;
+  color: red;
+}
+
+.svgStyle {
+  width: 20px;
+  float: left;
+  padding: 4px 4px 0px 0px;
+}
+
+.estimated_shipping {
+  font-weight: 500;
+}

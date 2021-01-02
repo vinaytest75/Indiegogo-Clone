@@ -12,6 +12,7 @@ import {
 import { CurrencyModal } from "./FooterComponents/CurrencyModal";
 
 const FooterStyle = styled.div`
+  clear: both;
   background: #f5f5f5;
   height: auto;
   width: 100%;

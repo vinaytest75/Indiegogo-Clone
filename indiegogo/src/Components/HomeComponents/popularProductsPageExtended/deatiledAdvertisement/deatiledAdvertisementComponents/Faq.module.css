@@ -1,0 +1,48 @@
+/* for the whole section */
+.page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  width: 50vw;
+  margin: 50px 100px 50px 70px;
+}
+
+.navbarPositioning {
+  margin-left: 0px;
+  margin-right: 700px;
+}
+
+.questionsHeading {
+  font-size: 24px;
+  color: darkolivegreen;
+  font-weight: 350;
+  padding-bottom: 0px;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.answer {
+  font-size: 18px;
+}
+
+.questionDiv {
+  padding-top: 20px;
+  line-height: 0.9;
+}
+
+.specialQuestionDivs {
+  padding: 50px;
+  border: 1px solid cyan;
+}
+
+.spanElement {
+  color: blue;
+  text-decoration: underline;
+}
+
+.spaecialdivs {
+  padding-top: 20px;
+  line-height: normal;
+}

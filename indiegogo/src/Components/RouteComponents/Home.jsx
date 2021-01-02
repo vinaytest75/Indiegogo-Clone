@@ -6,6 +6,7 @@ import { CrowdfundingBanner } from "../HomeComponents/CrowdfundingBanner";
 import { Categories } from "../HomeComponents/Categories";
 import { Curious } from "../HomeComponents/Curious";
 
+
 const Home = () => {
   return (
     <div>
