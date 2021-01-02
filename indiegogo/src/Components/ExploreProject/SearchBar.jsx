@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
 const SearchInputWrapper = styled.div`
   padding-top: 1em;
   display: flex;
@@ -55,10 +54,7 @@ const SearchInput = () => {
   return (
     <SearchInputWrapper>
       <InputWrapper>
-        <StyledInput
-          type="text"
-          placeholder="search"
-        />
+        <StyledInput type="text" placeholder="search" />
         <StyledButton>
           <i className="fa fa-search fa-2x" />
         </StyledButton>
@@ -66,4 +62,4 @@ const SearchInput = () => {
     </SearchInputWrapper>
   );
 };
-export {SearchInput}
+export { SearchInput };
