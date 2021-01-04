@@ -21,8 +21,9 @@
 ### Project Screenshots
 - Landing Page
 ![screenshot](./screenshot/LandingPage.png)
-- User Profile
-![screenshot](./screenshot/ExplorePage.png)
+
+- Explore Products page
+![screenshot](./screenshot/ExploreProducts.png)
 
 
 ### Installation and Setup Instructions
