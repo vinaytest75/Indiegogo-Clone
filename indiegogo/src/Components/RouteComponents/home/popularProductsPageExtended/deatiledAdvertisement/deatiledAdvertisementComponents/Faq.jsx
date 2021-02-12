@@ -1,8 +1,19 @@
 import React from "react"
 import Styles from "./Faq.module.css"
+import SelectPertSection from "../../selectPertSection/SelectPertSection"
 
 const Faq = () => {
     return (
+
+        <div>
+            <div style = {{float: "left"}}>
+
+            </div>
+            <div style = {{float: "right"}}>
+                <SelectPertSection />
+            </div>
+            <div style = {{clear:"both"}}></div>
+        </div>
         <div className = {Styles.page}>
             <p className = {Styles.questionsHeading}>Frequently Asked Questions</p>
             <div className = {Styles.questionDiv}>
@@ -81,6 +92,7 @@ const Faq = () => {
 
             </div>
         </div>
+
     )
 }
 
